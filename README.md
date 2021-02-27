@@ -42,10 +42,10 @@ _This website was built to take a users pizza order and give back a receipt with
 - There you can see my webpage
 
 ## Tests
-#### Describe: beepBoop()
+#### Describe: Pizza()
 ```
-Test: "It should return an array of 0 if the number 0 is inputted"
-Expect: beepBoop(0).toEqual([0])
+Test: "It should create an object called Pizza for taking pizza order related instances"
+Expect(Pizza("name", "toppings", "size").toEqual(Pizza{name: "name", toppings: "toppings", size: "size"})
 
 ```
 
