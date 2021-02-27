@@ -18,7 +18,7 @@
 
 ## Description
 
-_This page was built so _
+_This website was built to take a users pizza order and give back a receipt with an expected total. To do this I'm going to demonstrate my knowledge of JavaScript's Constructors and Prototypes. The user should be able to enter their name, preferred size, and desired toppings for their pizza. Then once submitted, get a receipt back with their name, order, and the amount owed. Give it a try by acquiring the Installation Requirements and following the Setup instructions below_
 
 ## Installation Requirements
 - Requires Visual Studio Code Installation
