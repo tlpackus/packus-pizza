@@ -1,0 +1,19 @@
+what happens when the user clicks "Compute Receipt"?
+
+the user's name, toppings, and size should be inputted and their cost calculated based off the minimum price of $3 and going up from there. The toppings should be $1 each and the size should be $2 extra for medium $2 more for a large or $10 more for Giganto.
+
+What objects will I need?
+pizza
+
+what key-value pairs will the pizza object need to contain?
+Pizza (customer-name, selected-toppings, selected-size)
+name: "string"
+toppings: {}
+size: 0-3 value
+
+Needed buttons: 
+
+Compute Receipt
+
+
+-What functions and how will these be triggered
