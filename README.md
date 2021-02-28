@@ -55,7 +55,7 @@ Expect(Pizza.prototype.calcCost().toEqual)
 #### Describe: mkReceipt()
 ```
 Test: "It should take the customers name, selected
-
+```
 ## Known Bugs
 
 * _no bugs yet_
