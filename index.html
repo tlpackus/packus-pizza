@@ -28,13 +28,34 @@
           <input type="checkbox" name="topping" value="artichoke"> Artichoke<br>
           <input type="checkbox" name="topping" value="stuff-crust"> Stuffed Crust<br>
         </div>
+        <h3>Choose a size<em>(Warning The Giganto Does Not Fit Out Door Very Easily)</em></h3>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="small">
+            Single Slice <em>$3</em>
+          </label>
+          <label>
+            <input type="radio" name="size" value="medium">
+            Double Slice <em>$5</em>
+          </label>
+          <label>
+            <input type="radio" name="size" value="large">
+            Full 12 inch Pie <em>$10</em>
+          </label>
+          <label>
+            <input type="radio" name="size" value="giganto">
+            Giganto 3 foot Pie <em>$15</em>
+          </label>
+        </div>
       </div>
-      
-
-      </div>
-      </div>
+      <button type="submit" class="btn-primary">Compute Receipt</button>
     </form>
   </div>
-  
+  <div class="guestReciept">
+    <p>Name: <span id="guestName"></span></p>
+    <p>Size: <span id="pizzaSize"></span></p>
+    <p>Toppings: <span id="pizzaTopping"></span></p>
+    <p>Cost: <span id="totalPrice"></span></p>
+  </div>
 </body>
 </html>
