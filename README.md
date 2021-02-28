@@ -44,8 +44,8 @@ _This website was built to take a users pizza order and give back a receipt with
 ## Tests
 #### Describe: Pizza()
 ```
-Test: "It should create an object called Pizza for taking pizza order related instances"
-Expect(Pizza("name", "toppings", "size").toEqual(Pizza{name: "name", toppings: "toppings", size: "size"})
+Test: "It should create an object called Pizza for taking name, toppings, size, and assign a start price"
+Expect(let firstOrder = new Pizza("firstName", "cheese", "small").toEqual(Pizza {name: "firstName", topping: "cheese", size: "small", price: 3})
 
 ```
 
