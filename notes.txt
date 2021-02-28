@@ -16,4 +16,18 @@ Needed buttons:
 Compute Receipt
 
 
--What functions and how will these be triggered
+-What functions and how will these be triggered?
+Pizza functions:
+calcCost - triggered by submit (clicking "Compute Receipt")
+makeReceipt - triggered by submit (clicking "Compute Receipt")
+
+How will information be collected from the user? How will it be displayed?
+
+The information will be collected through a submit form that takes the customers name, size of their pizza, and their desired toppings. The size of their pizza will be taken through a radio input while the toppings taken by a checkbox. The info will then be turned into a receipt thats displayed back to the user with their name, cost, and their order details at the bottom of the page.
+
+List of Tests:
+Pizza object
+calcCost()
+makeReceipt()
+
+
