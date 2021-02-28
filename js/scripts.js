@@ -23,14 +23,14 @@ $(document).ready(function() {
   $("#order").submit(function(event) {
     event.preventDefault();
     let gName = $("input#name").val()
-    let toppingsSelected = $("input:checkbox[name=topping]:checked").map(function() {
+    let toppingSelected = $("input:checkbox[name=topping]:checked").map(function() {
       return this.value;
     }).get();
     let sizeSelected = $("input:radio[name=size]:checked").val();
-    let guestPizza = new Pizza(toppingsSelected, sizeSelected);
+    let guestPizza = new Pizza(toppingSelected, sizeSelected);
     $("#guestName").text(gName);
-    $("pizzaTopping").text(guestPizza.topping);
-    $("pizzaSize").text(guestPizza.size);
-    $("totalPrice").text(guestPizza.price);
+    $("#pizzaTopping").text(guestPizza.topping);
+    $("#pizzaSize").text(guestPizza.size);
+    $("#totalPrice").text(guestPizza.calcCost());
   });
 });
