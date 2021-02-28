@@ -52,10 +52,7 @@ Expect(let firstOrder = new Pizza("firstName", "cheese", "small").toEqual(PizzaÂ
 Test: "It should check the selected size and the selected toppings array length to sum the price"
 Expect(Pizza.prototype.calcCost().toEqual)
 ```
-#### Describe: mkReceipt()
-```
-Test: "It should take the customers name, selected
-```
+
 ## Known Bugs
 
 * _no bugs yet_
@@ -63,7 +60,7 @@ Test: "It should take the customers name, selected
 
 ## License
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE.txt) Copyright (c) **_2021 Theron L. Packus_**
 
 ## Contact Information
 
