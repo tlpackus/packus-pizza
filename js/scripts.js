@@ -1,6 +1,5 @@
-function Pizza (name, toppings, size) {
-  this.name = name;  //string
-  this.topping = toppings;  //array
+function Pizza (topping, size) {
+  this.topping = topping;  //array
   this.size = size;  //string
   this.price = 3;  //value
 }
@@ -18,3 +17,20 @@ Pizza.prototype.calcCost = function() {
   }
   return this.price;
 };
+
+
+$(document).ready(function() {
+  $("#order").submit(function(event) {
+    event.preventDefault();
+    let gName = $("input#name").val()
+    let toppingsSelected = $("input:checkbox[name=topping]:checked").map(function() {
+      return this.value;
+    }).get();
+    let sizeSelected = $("input:radio[name=size]:checked").val();
+    let guestPizza = new Pizza(toppingsSelected, sizeSelected);
+    $("#guestName").text(gName);
+    $("pizzaTopping").text(guestPizza.topping);
+    $("pizzaSize").text(guestPizza.size);
+    $("totalPrice").text(guestPizza.price);
+  });
+});
