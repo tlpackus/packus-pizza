@@ -1,7 +1,7 @@
 function Pizza (topping, size) {
-  this.topping = topping;  //array
-  this.size = size;  //string
-  this.price = 3;  //value
+  this.topping = topping;  
+  this.size = size;  
+  this.price = 3; 
 }
 
 Pizza.prototype.calcCost = function() {
