@@ -45,12 +45,12 @@ _This website was built to take a users pizza order and give back a receipt with
 #### Describe: Pizza()
 ```
 Test: "It should create an object called Pizza for taking name, toppings, size, and assign a start price"
-Expect(let firstOrder = new Pizza("firstName", "cheese", "small").toEqual(Pizza {name: "firstName", topping: "cheese", size: "small", price: 3})
+Expect(let firstOrder = new Pizza(["cheese"], "small").toEqual(Pizza {topping: ["cheese"], size: "small", price: 3})
 ```
 #### Describe: calcCost()
 ```
 Test: "It should check the selected size and the selected toppings array length to sum the price"
-Expect(Pizza.prototype.calcCost().toEqual)
+Expect(firstOrder.calcCost().toEqual(4)
 ```
 
 ## Known Bugs
